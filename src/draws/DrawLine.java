@@ -14,9 +14,9 @@ public class DrawLine {
 
     public void drawLine(int x, int y) {
 
-        for (int i = 0; i < x; i++) {
+        for (int i = 0; i < x; i+=3) {
             line.setEndX(i);
-            new AnimationWaitingTime().wait(9);
+            new AnimationWaitingTime().wait(13);
         }
 
     }
