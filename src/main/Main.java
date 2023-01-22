@@ -13,9 +13,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-//        MusicPlayer.playMusic(MusicPlayer.getCakeMusicPath());
-//        Scene scene = new MyScene().getBirthdayCake();
-        Scene scene = new MyScene().getSnow();
+        MusicPlayer.playMusic(MusicPlayer.getCakeMusicPath());
+        Scene scene = new MyScene().getBirthdayCake();
+//        Scene scene = new MyScene().getSnow();
         primaryStage.setTitle("HAPPY BIRTH DAY");
         primaryStage.setScene(scene);
 
