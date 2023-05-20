@@ -1,0 +1,38 @@
+
+E
+java:S1121¶".Extract the assignment out of this expression.(¦ö”É
+>
+java:S1604p"(Make this anonymous inner class a lambda(ÉãÃ®
+>
+java:S1604|"(Make this anonymous inner class a lambda(ÉãÃ®
+?
+java:S1604‡"(Make this anonymous inner class a lambda(ÉãÃ®
+?
+java:S1604˜"(Make this anonymous inner class a lambda(ÉãÃ®
+p
+java:S11042"ZMake threadProgress a static final constant or non-public and provide accessors if needed.(Å»Áİ
+b	java:S101L"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°åÁË
+A
+java:S14818"&Remove this unused "i" local variable.(ùó›Ìøÿÿÿÿ
+N	java:S106="9Replace this use of System.out or System.err by a logger.( óÈ—
+B
+java:S1602@",Remove useless curly braces around statement(ÃÉş©
+S
+java:S1612@"=Replace this lambda with method reference 'this::addButtons'.(ÃÉş©
+K
+java:S2696Z"6Make the enclosing method "static" or remove this set.(Ö»¿
+B
+java:S1125k"'Remove the unnecessary boolean literal.(¥¤Úúûÿÿÿÿ
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(Ÿç‘‹
+<
+java:S1125y"'Remove the unnecessary boolean literal.(ğ‰”D
+C
+java:S1125„"'Remove the unnecessary boolean literal.(’Œõúÿÿÿÿ
+X
+java:S1126®"AReplace this if-then-else statement by a single return statement.(’ƒ´š
+]
+java:S1126Â"AReplace this if-then-else statement by a single return statement.(ÒÉÏïüÿÿÿÿ
+X
+java:S1126É"AReplace this if-then-else statement by a single return statement.(ÁÿÓ©
+W
+java:S1126Ö"AReplace this if-then-else statement by a single return statement.(ÓÁ

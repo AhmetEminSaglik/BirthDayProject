@@ -1,0 +1,11 @@
+
+f
+java:S1104"PMake clip a static final constant or non-public and provide accessors if needed.(Üª ë
+@
+java:S1444"*Make this "public static clip" field final(Üª ë
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Ç¡≥ù
+Z
+java:S2147."DCombine this catch with the one at line 44, which has the same body.(√Ù˛ï
+Z
+java:S21470"DCombine this catch with the one at line 44, which has the same body.(ÍºûÈ
