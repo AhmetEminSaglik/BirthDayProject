@@ -68,7 +68,8 @@ public class Firework extends Ellipse {
     }
 
     void createNumberOfPieces() {
-        numberOfPieces = new Random().nextInt(40) + 10;
+        numberOfPieces = new Random().nextInt(20
+        ) + 10;
 //        numberOfPieces = 60;
     }
 

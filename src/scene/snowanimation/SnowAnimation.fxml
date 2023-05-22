@@ -11,14 +11,14 @@ and open the template in the editor.
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="myAnchorPane" prefHeight="830.0" prefWidth="1250.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.snowanimation.SnowAnimationController">
+<AnchorPane id="AnchorPane" fx:id="myAnchorPane" prefHeight="730.0" prefWidth="1290.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.snowanimation.SnowAnimationController">
    <children>
-      <Button fx:id="btnStartSnow" layoutX="468.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#snowFallBtnClick" prefHeight="60.0" prefWidth="233.0" text="start the snowfall">
+      <Button fx:id="btnStartSnow" layoutX="503.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#snowFallBtnClick" prefHeight="60.0" prefWidth="233.0" text="start the snowfall">
          <font>
             <Font size="19.0" />
          </font></Button>
-      <AnchorPane fx:id="nextPage" layoutX="985.0" layoutY="24.0" prefHeight="70.0" prefWidth="200.0" />
-      <TextField fx:id="txtSnowPiece" alignment="CENTER" layoutX="36.0" layoutY="24.0" prefHeight="60.0" prefWidth="233.0" style="-fx-background-color: black; -fx-: blue;" text="Snow Pieces ">
+      <AnchorPane fx:id="nextPage" layoutX="1020.0" layoutY="26.0" prefHeight="70.0" prefWidth="200.0" />
+      <TextField fx:id="txtSnowPiece" alignment="CENTER" layoutX="71.0" layoutY="26.0" prefHeight="60.0" prefWidth="233.0" style="-fx-background-color: black; -fx-: blue;" text="Snow Pieces ">
          <font>
             <Font size="19.0" />
          </font></TextField>

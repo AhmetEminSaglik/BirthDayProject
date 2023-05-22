@@ -77,6 +77,8 @@ public class CakeController implements Initializable {
 
         @Override
         public void run() {
+
+            new AnimationWaitingTime().wait(5000);
             drawLine(line1);
             drawLine(line2);
             drawLine(line3);

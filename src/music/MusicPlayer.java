@@ -51,12 +51,12 @@ public class MusicPlayer {
 
     public static String getCakeMusicPath() {
         setLoopContinuously();
-        volume = -15.0f;
+        volume = 0.0f;
         return "src/music/happyBirthDayToYou.wav";
     }
 
     public static String getSnowMusicPath() {
-        volume = 3.0f;
+        volume = 6.0f;
         setLoopContinuously();
         return "src/music/RiverFlowsinYou.wav";
     }

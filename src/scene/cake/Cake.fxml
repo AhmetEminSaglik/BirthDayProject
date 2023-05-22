@@ -7,23 +7,23 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane fx:id="paneBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1250.0" style="-fx-background-color: rgb(255, 255, 215);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.cake.CakeController">
+<Pane fx:id="paneBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1290.0" style="-fx-background-color: rgb(255, 255, 215);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene.cake.CakeController">
    <children>
-      <Circle fx:id="brightness2" fill="#ffeda5" layoutX="631.0" layoutY="222.0" stroke="#fcfaab" strokeType="INSIDE" />
-      <Circle fx:id="brightness1" fill="#ffe992" layoutX="594.0" layoutY="222.0" stroke="#f8f2ce" strokeType="INSIDE" />
-      <Circle fx:id="brightness3" fill="#fceb96" layoutX="679.0" layoutY="222.0" stroke="#eeff00" strokeType="INSIDE" />
-      <Line fx:id="line1" layoutX="420.0" layoutY="630.0" stroke="#ff2d7a" strokeWidth="10.0" />
-      <Line fx:id="line2" layoutX="420.0" layoutY="600.0" stroke="#bb5ef8" strokeWidth="10.0" />
-      <Line fx:id="line3" layoutX="420.0" layoutY="570.0" stroke="#21e121" strokeWidth="10.0" />
-      <Line endX="-61.0" endY="35.0" layoutX="655.0" layoutY="275.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
-      <Line endX="-61.0" endY="35.0" layoutX="737.0" layoutY="274.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
-      <Ellipse fx:id="fire1" fill="#ff8a1f" layoutX="594.0" layoutY="229.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b3312" height="79.0" layoutX="488.0" layoutY="455.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd0f1c" height="73.0" layoutX="523.0" layoutY="382.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d741e0" height="73.0" layoutX="567.0" layoutY="309.0" stroke="BLACK" strokeType="INSIDE" width="137.0" />
-      <Line endX="-61.0" endY="35.0" layoutX="696.0" layoutY="271.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
-      <Ellipse fx:id="fire2" fill="#ff8a1f" layoutX="635.0" layoutY="225.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="fire3" fill="#ff8a1f" layoutX="676.0" layoutY="229.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
-      <AnchorPane fx:id="nextPage" layoutX="860.0" layoutY="70.0" prefHeight="70.0" prefWidth="200.0" />
+      <Circle fx:id="brightness2" fill="#ffeda5" layoutX="648.0" layoutY="140.0" stroke="#fcfaab" strokeType="INSIDE" />
+      <Circle fx:id="brightness1" fill="#ffe992" layoutX="611.0" layoutY="140.0" stroke="#f8f2ce" strokeType="INSIDE" />
+      <Circle fx:id="brightness3" fill="#fceb96" layoutX="696.0" layoutY="140.0" stroke="#eeff00" strokeType="INSIDE" />
+      <Line fx:id="line1" layoutX="437.0" layoutY="548.0" stroke="#ff2d7a" strokeWidth="10.0" />
+      <Line fx:id="line2" layoutX="437.0" layoutY="518.0" stroke="#bb5ef8" strokeWidth="10.0" />
+      <Line fx:id="line3" layoutX="437.0" layoutY="488.0" stroke="#21e121" strokeWidth="10.0" />
+      <Line endX="-61.0" endY="35.0" layoutX="672.0" layoutY="193.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
+      <Line endX="-61.0" endY="35.0" layoutX="754.0" layoutY="192.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
+      <Ellipse fx:id="fire1" fill="#ff8a1f" layoutX="611.0" layoutY="147.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b3312" height="79.0" layoutX="505.0" layoutY="373.0" stroke="BLACK" strokeType="INSIDE" width="288.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd0f1c" height="73.0" layoutX="540.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d741e0" height="73.0" layoutX="584.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="137.0" />
+      <Line endX="-61.0" endY="35.0" layoutX="713.0" layoutY="189.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
+      <Ellipse fx:id="fire2" fill="#ff8a1f" layoutX="652.0" layoutY="143.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="fire3" fill="#ff8a1f" layoutX="693.0" layoutY="147.0" onMouseEntered="#mouseEntered" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane fx:id="nextPage" layoutX="870.0" layoutY="70.0" prefHeight="70.0" prefWidth="200.0" />
    </children>
 </Pane>

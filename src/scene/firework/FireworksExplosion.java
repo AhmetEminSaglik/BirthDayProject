@@ -1,9 +1,11 @@
 package scene.firework;
 
 import animationwaitingtime.AnimationWaitingTime;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
 import javafx.application.Platform;
 import music.MusicPlayer;
 
@@ -32,28 +34,38 @@ public class FireworksExplosion {
     }
 
     public void explode() {
+        try{
         MusicPlayer.playMusic(MusicPlayer.getfireworkMusicPath());
-        double burstTotalPower = firework.getBurstPower() + firework.getHeightPower() + firework.getWidthPower();
-        int slowMotion = 50;
-        burstTotalPower /= slowMotion;
+        }catch (IllegalArgumentException e){
+            System.err.println("FIREWORK DID NOT HAVE SOUND");
+        }
+        int slowMotion = 150;
+        double burstTotalPower = (firework.getHeightPower() / 3 + firework.getWidthPower()) / slowMotion;
+//        burstTotalPower /= slowMotion;
+
+
         for (int j = 0; j < slowMotion; j++) {
-            new AnimationWaitingTime().wait(7);
-            for (int i = 0; i < pieceList.size(); i++) {
+            new AnimationWaitingTime().wait(5);
+//            new Thread(e -> {
+                for (int i = 0; i < pieceList.size(); i++) {
 
-                pieceList.get(i).spreadAround(burstTotalPower);
 
-            }
+                    pieceList.get(i).spreadAround(burstTotalPower);
+
+                }
+//            });
+
         }
         fallOfPieces();
     }
 
     void fallOfPieces() {
-        int slowMotion = 200;
+        int slowMotion = 100;
         double rate = 1.0 / slowMotion;
         double opacityDegree = 1;
 
         for (int j = 0; j < slowMotion; j++) {
-            new AnimationWaitingTime().wait(5);
+            new AnimationWaitingTime().wait(8);
             for (int i = 0; i < pieceList.size(); i++) {
 
                 pieceList.get(i).fallDown();

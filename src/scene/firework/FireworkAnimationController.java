@@ -1,11 +1,13 @@
 package scene.firework;
 
 import animationwaitingtime.AnimationWaitingTime;
+
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
+
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,6 +31,7 @@ public class FireworkAnimationController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+
     Random random = new Random();
 
     void createFirework() {
@@ -43,21 +46,34 @@ public class FireworkAnimationController implements Initializable {
     }
 
     void fireAllFireWorks() {
+        Random random = new Random();
+        int waitingMS;
         for (int i = 0; i < fireworkList.size(); i++) {
 
             Firework firework = fireworkList.get(i);
-            fireTheFirework(firework);
+            new Thread(() -> {
+                fireTheFirework(firework);
+            }).start();
+            try {
+                waitingMS = random.nextInt(500) + 300;
+                Thread.sleep(waitingMS);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
     }
 
-    void fireTheFirework(Firework firework) {
-        while (firework.getCenterY() > 300) {
+    void fireTheFirework(Firework firework) { //240 - 500
+        Random random = new Random();
+        int heighBorder = random.nextInt(6) * 35 + 240;
+        while (firework.getCenterY() > heighBorder) {
             double locationY = firework.getCenterY();
-            new AnimationWaitingTime().wait(1);
+            new AnimationWaitingTime().wait(10);
             Platform.runLater(() -> {
                 firework.setCenterY(locationY - 5);
             });
+
         }
         FireworksExplosion fireworksExplosion = new FireworksExplosion(firework);
         Platform.runLater(() -> {
@@ -69,7 +85,8 @@ public class FireworkAnimationController implements Initializable {
         Platform.runLater(() -> {
             firework.setOpacity(0);
         });
-
+        startMusic();
+        new AnimationWaitingTime().wait(50);
         fireworksExplosion.explode();
     }
 
@@ -78,13 +95,8 @@ public class FireworkAnimationController implements Initializable {
 
     @FXML
     private void mouseClick(MouseEvent event) {
-        if (musicBackSounStarted == false) {
-            FireworkBackSound.playMusic();
-            musicBackSounStarted = true;
-        }
-
         if (started == false) {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 45; i++) {
                 createFirework();
 
             }
@@ -97,4 +109,10 @@ public class FireworkAnimationController implements Initializable {
         }
     }
 
+    private void startMusic() {
+        if (musicBackSounStarted == false) {
+            FireworkBackSound.playMusic();
+            musicBackSounStarted = true;
+        }
+    }
 }
