@@ -12,8 +12,8 @@
       <Circle fx:id="brightness2" fill="#ffeda5" layoutX="648.0" layoutY="140.0" stroke="#fcfaab" strokeType="INSIDE" />
       <Circle fx:id="brightness1" fill="#ffe992" layoutX="611.0" layoutY="140.0" stroke="#f8f2ce" strokeType="INSIDE" />
       <Circle fx:id="brightness3" fill="#fceb96" layoutX="696.0" layoutY="140.0" stroke="#eeff00" strokeType="INSIDE" />
-      <Line fx:id="line1" layoutX="437.0" layoutY="548.0" stroke="#ff2d7a" strokeWidth="10.0" />
-      <Line fx:id="line2" layoutX="437.0" layoutY="518.0" stroke="#bb5ef8" strokeWidth="10.0" />
+      <Line fx:id="line1" endX="430.0" layoutX="437.0" layoutY="548.0" stroke="#ff2d7a" strokeMiterLimit="100.0" strokeWidth="10.0" />
+      <Line fx:id="line2" endX="430.0" layoutX="437.0" layoutY="518.0" stroke="#bb5ef8" strokeWidth="10.0" />
       <Line fx:id="line3" layoutX="437.0" layoutY="488.0" stroke="#21e121" strokeWidth="10.0" />
       <Line endX="-61.0" endY="35.0" layoutX="672.0" layoutY="193.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />
       <Line endX="-61.0" endY="35.0" layoutX="754.0" layoutY="192.0" startX="-61.0" startY="-14.0" strokeWidth="5.0" />

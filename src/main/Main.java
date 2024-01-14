@@ -16,6 +16,8 @@ public class Main extends Application {
         MusicPlayer.playMusic(MusicPlayer.getCakeMusicPath());
         Scene scene = new MyScene().getBirthdayCake();
 //        Scene scene = new MyScene().getSnow();
+//        Scene scene = new MyScene().getFirework();
+
         primaryStage.setTitle("HAPPY BIRTH DAY");
         primaryStage.setScene(scene);
 

@@ -96,7 +96,7 @@ public class FireworkAnimationController implements Initializable {
     @FXML
     private void mouseClick(MouseEvent event) {
         if (started == false) {
-            for (int i = 0; i < 45; i++) {
+            for (int i = 0; i < 50; i++) {
                 createFirework();
 
             }
