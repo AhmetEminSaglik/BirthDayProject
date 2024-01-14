@@ -52,7 +52,8 @@ public class MusicPlayer {
     public static String getCakeMusicPath() {
         setLoopContinuously();
         volume = 0.0f;
-        return "src/music/happyBirthDayToYou.wav";
+//        return "src/music/happyBirthDayToYou.wav";
+        return "src/music/birthday-gursel.wav";
     }
 
     public static String getSnowMusicPath() {
