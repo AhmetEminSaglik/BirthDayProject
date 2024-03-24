@@ -52,19 +52,19 @@ public class MusicPlayer {
     public static String getCakeMusicPath() {
         setLoopContinuously();
         volume = 0.0f;
-        return "src/music/happyBirthDayToYou.wav";
+        return "D:/projects/intelijidea/BirthdayProject/src/music/happyBirthDayToYou.wav";
     }
 
     public static String getSnowMusicPath() {
         volume = 6.0f;
         setLoopContinuously();
-        return "src/music/RiverFlowsinYou.wav";
+        return "D:/projects/intelijidea/BirthdayProject/src/music/RiverFlowsinYou.wav";
     }
 
     public static String getfireworkMusicPath() {
         setLoopOneTime();
         volume = 5.0f;
-        return "src/music/firework.wav";
+        return "D:/projects/intelijidea/BirthdayProject/src/music/firework.wav";
     }
 
     public static void stopMusic() {

@@ -29,7 +29,7 @@ public class FireworkBackSound {
     public static void playMusic() {
         try {
             stopMusic();
-            AudioInputStream stream = AudioSystem.getAudioInputStream(new File("src/music/fireworkBackSound.wav"));
+            AudioInputStream stream = AudioSystem.getAudioInputStream(new File("D:/projects/intelijidea/BirthdayProject/src/music/fireworkBackSound.wav"));
 
             clip = AudioSystem.getClip();
             clip.open(stream);
